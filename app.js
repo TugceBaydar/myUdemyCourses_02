@@ -57,11 +57,12 @@ document.querySelector('.btn-hold').addEventListener('click',function() {
 
     // check if player won the game
     if(scores[activePlayer] >= 20) {
-      document.querySelector('#name-' + activePlayer).textContent = 'Winner!!';
+      document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
       document.querySelector('.dice').style.display = 'none';
       document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
       document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
       gamePlaying = false;
+      alert("congratulation HSYN ! , Yes I do remember it :) and you are going to get your reward later :) ");
     } else {
       //next player
       nextPlayer();
