@@ -2,6 +2,32 @@
 *** GENERAL
 **********************************************/
 
+.final_score {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 520px;
+  color: #555;
+  font-size: 18px;
+  font-family: 'Lato';
+  text-align: center;
+  padding: 10px;
+  width: 160px;
+  text-transform: uppercase;
+}
+
+.final_score:focus {
+  outline: none;
+}
+
+#dice-1 {
+  top:120px;
+}
+
+#dice-2 {
+  top:250px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -143,7 +169,7 @@ i {
 
 .dice {
     position: absolute;
-    left: 43%;
+    left: 50%;
     top: 178px;
     transform: translateX(-50%);
     height: 100px;
@@ -161,11 +187,3 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
-
-input {
-    height: 54px;
-    padding-left: 10px;
-    margin-left: 43%;
-    box-shadow: 1px 0px 7px 1px #903737;
-    margin-bottom: 30px;
-}
